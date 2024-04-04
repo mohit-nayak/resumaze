@@ -19,7 +19,7 @@ const Header = () => {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }: { open: boolean }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -42,7 +42,11 @@ const Header = () => {
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
                   /> */}
-                  <h2 className="text-xl font-medium text-white">Logo</h2>
+                  <Link href={`/`}>
+                    <h2 className="text-2xl font-medium text-white">
+                      Resumaze
+                    </h2>
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
